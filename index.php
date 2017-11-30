@@ -11,17 +11,27 @@
 
 <body>
     <div class="wrap">
+        <div class="mobile-block">
+            <div class="mobile-menu">
+                <ul class="nav">
+                    <li class="active"><a href="#">Главная</a></li>
+                    <li><a href="#">Ссылка 1</a></li>
+                    <li><a href="#">Ссылка 2</a></li>
+                    <li><a href="#">Ссылка 3</a></li>
+                </ul>
+            </div>
+        </div>
         <div class="header">
             <div class="container-fluid header-cont">
                 <div class="row">
-                    <div class="col-xs-6 col-sm-4 header-block">
+                    <div class="col-xs-6 col-md-4 header-block header-block-1">
                         <div class="content">
                             <div class="logo">
                                 <a href="/"><img src="/web/img/logo.png" alt="" class="img-responsive"></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-sm-8 header-block">
+                    <div class="col-xs-6 col-md-8 header-block header-block-2">
                         <div class="content">
                             <div class="main-menu">
                                 <ul class="nav">
@@ -30,6 +40,11 @@
                                     <li><a href="#">Ссылка 2</a></li>
                                     <li><a href="#">Ссылка 3</a></li>
                                 </ul>
+                            </div>
+                            <div class="menu-btn">
+                                <div class="tcon tcon-menu--xcross">
+                                    <span class="tcon-menu__lines"></span>
+                                </div>
                             </div>
                             <div class="block-phone">
                                 <div class="content">

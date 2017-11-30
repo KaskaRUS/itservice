@@ -138,6 +138,11 @@ a:focus {
     height: 100px;
     top: -100px;
     margin-bottom: -100px;
+
+    @media all and (min-width: 992px) and (max-width: 1269px) {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 }
 .trinagle-bottom-left,
 .trinagle-bottom-right {
@@ -285,8 +290,100 @@ a:focus {
             margin: 0;
         }
     }
+    .menu-btn {
+        float: right;
+        margin-left: 10px;
+        display: none;
+    }
+
+    @media all and (min-width: 992px) and (max-width: 1269px) {
+        .header-cont {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    }
+    @media all and (max-width: 991px) {
+        .main-menu {
+            display: none;
+        }
+        .menu-btn {
+            display: block;
+            padding: 13px 0;
+        }
+        .block-phone {
+            padding: 27px 10px;
+        }
+        .header-block {
+            height: 100%;
+            display: block;
+
+            & > div {
+                display: block;
+            }
+        }
+    }
+    @media all and (max-width: 719px) {
+        .block-phone {
+            display: none;
+        }
+        .header-cont {
+            height: auto;
+        }
+        .logo img {
+            max-width: 200px;
+        }
+        .menu-btn {
+            padding: 10px 0;
+        }
+    }
 }
 
+
+/*    mobile-block
+-------------------------------*/
+.mobile-block {
+    position: fixed;
+    z-index: 8;
+    top: 0;
+    height: 100%;
+    background: #ffffff;
+}
+
+/*    mobile-menu
+-------------------------------*/
+.mobile-menu {
+    position: fixed;
+    z-index: 9;
+    top: 120px;
+
+    li {
+        a {
+            color: $textColor;
+            background: none;
+            padding: 13px;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 13px;
+        }
+        &.active a,
+        &:hover a {
+            background: none;
+            color: $textColor2;
+        }
+    }
+}
+.mobile-block,
+.mobile-menu {
+    left: -250px;
+    width: 250px;
+    @include transition(all 0.5s ease);
+}
+.wrap.show-menu {
+    .mobile-block,
+    .mobile-menu {
+        left: 0;
+    }
+}
 
 /*    main-menu
 -------------------------------*/
@@ -310,6 +407,91 @@ a:focus {
     }
 }
 
+/*    menu-btn
+-------------------------------*/
+.tcon {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    @include transition(0.3s);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 60px;
+    height: 53px;
+    padding: 13px 0;
+    background: transparent;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    text-align: center;
+
+    & > * {
+        display: block;
+    }
+    &:focus,
+    &:hover {
+        outline: none;
+    }
+    &::-moz-focus-inner {
+        border: 0;
+    }
+    .tcon-menu__lines {
+        display: inline-block;
+        height: 5.71429px;
+        width: 40px;
+        @include transition(0.3s);
+        background: $textColor;
+        position: relative;
+
+        &::after,
+        &::before {
+            display: inline-block;
+            height: 5.71429px;
+            width: 40px;
+            @include transition(0.3s);
+            background: $textColor;
+            content: '';
+            position: absolute;
+            left: 0;
+            @include transform-origin(2.85714px center);
+            width: 100%;
+        }
+        &::before {
+            top: 10px;
+        }
+        &::after {
+            top: -10px;
+        }
+    }
+    &.active .tcon-menu__lines {
+        @include transform(scale3d(0.8, 0.8, 0.8));
+        background: transparent;
+
+        &::after,
+        &::before {
+            @include transform-origin(50% 50%);
+            top: 0;
+            width: 40px;
+        }
+        &::before {
+            @include transform(rotate3d(0, 0, 1, 45deg));
+        }
+        &::after {
+            @include transform(rotate3d(0, 0, 1, -45deg));
+        }
+    }
+    .tcon-menu--xcross {
+        width: auto;
+    }
+    @media all and (max-width: 719px) {
+        height: 43px;
+        padding: 7px 0;
+    }
+}
 
 /*    main-photo
 -------------------------------*/
@@ -351,6 +533,11 @@ a:focus {
         font-weight: 300;
         padding: 10px 0 20px;
     }
+
+    @media all and (max-width: 991px) {
+        position: relative;
+        background-attachment: fixed;
+    }
 }
 
 
@@ -362,6 +549,13 @@ a:focus {
 
     &.loaded {
         margin-top: 480px;
+    }
+    @media all and (max-width: 991px) {
+        margin-top: 0;
+
+        &.loaded {
+            margin-top: 0;
+        }
     }
 }
 /*    view-feature
