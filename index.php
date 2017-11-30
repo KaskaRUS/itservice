@@ -151,27 +151,35 @@
 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A57544afb9b75462cc6d16e0672446901b02dbb75daf17fd695603f34238cfccd&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
                 </div>
             </div>
-            <div class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="first-footer col-xs-6">
-                            <div class="logo">
-                                <a href="/"><img src="/web/img/logo.png" alt="" class="img-responsive"></a>
+            <div class="dark-section">
+                <div class="triangle-section container-fluid">
+                    <div class="trinagle-bottom-left"></div>
+                    <div class="square-left"></div>
+                    <div class="trinagle-bottom-right"></div>
+                    <div class="square-right"></div>
+                </div>
+                <div class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-6 first-footer">
+                                <div class="logo">
+                                    <a href="/"><img src="/web/img/logo.png" alt="" class="img-responsive"></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="second-footer">
-                            <div class="block-contact">
-                                <div class="block-title">
-                                    <span>Контакты</span>
-                                </div>
-                                <div class="phone">
-                                    <span><i class="glyphicon glyphicon-earphone"></i>+7 (999) 999-99-9</span>
-                                </div>
-                                <div class="address">
-                                    <span><i class="glyphicon glyphicon-pushpin"></i>г. Киров, ул. Халтурина 9-24</span>
-                                </div>
-                                <div class="mail">
-                                    <span><i class="glyphicon glyphicon-send"></i>test@mail.ru</span>
+                            <div class="col-xs-6 second-footer">
+                                <div class="block-contact">
+                                    <div class="block-title">
+                                        <span>Контакты</span>
+                                    </div>
+                                    <div class="phone">
+                                        <p><i class="glyphicon glyphicon-earphone"></i>+7 (999) 999-99-9</p>
+                                    </div>
+                                    <div class="address">
+                                        <p><i class="glyphicon glyphicon-pushpin"></i>г. Киров, ул. Халтурина 9-24</p>
+                                    </div>
+                                    <div class="mail">
+                                        <p><i class="glyphicon glyphicon-send"></i>test@mail.ru</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

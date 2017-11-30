@@ -207,8 +207,13 @@ a:focus {
   padding: 75px 0; }
 
 .dark-section {
-  background-color: #222222;
+  background: #222222;
   color: #cccccc; }
+  .dark-section .triangle-section .trinagle-bottom-left::before,
+  .dark-section .triangle-section .trinagle-bottom-right::before,
+  .dark-section .triangle-section .square-left::before,
+  .dark-section .triangle-section .square-right::before {
+    background: #222222; }
 
 /*    Header
 -------------------------------*/
@@ -346,5 +351,34 @@ a:focus {
     -moz-opacity: 1;
     -khtml-opacity: 1;
     opacity: 1; }
+
+/*    map
+-------------------------------*/
+.map {
+  height: 400px; }
+
+/*    footer
+-------------------------------*/
+.footer {
+  padding: 75px 0; }
+  .footer .second-footer {
+    text-align: right; }
+  .footer .block-contact {
+    display: inline-block;
+    text-align: left; }
+
+.block-contact .block-title {
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 20px; }
+.block-contact .phone {
+  font-size: 20px;
+  font-weight: 600; }
+  .block-contact .phone i {
+    font-size: 17px;
+    margin-right: 10px; }
+.block-contact .address i,
+.block-contact .mail i {
+  margin-right: 10px; }
 
 /*# sourceMappingURL=style.css.map */
