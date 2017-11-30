@@ -190,6 +190,6 @@
     </div>
 
     <script src="/web/js/jquery-3.2.1.min.js"></script>
-    <!-- <script src="/js/site.js"></script> -->
+    <script src="/web/js/site.js"></script>
 </body>
 </html>

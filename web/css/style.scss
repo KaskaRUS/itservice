@@ -136,7 +136,8 @@ a:focus {
 .triangle-section {
     position: relative;
     height: 100px;
-    margin-top: -100px;
+    top: -100px;
+    margin-bottom: -100px;
 }
 .trinagle-bottom-left,
 .trinagle-bottom-right {
@@ -319,7 +320,10 @@ a:focus {
     -o-background-size: cover;
     background-size: cover;
     height: 480px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 
     .main-photo-group {
         position: absolute;
@@ -350,6 +354,16 @@ a:focus {
 }
 
 
+
+.main-content {
+    position: relative;
+    top: 100px;
+    @include transition(top 0.8s ease);
+
+    &.loaded {
+        top: 480px;
+    }
+}
 /*    view-feature
 -------------------------------*/
 .view-feature {
