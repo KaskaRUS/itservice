@@ -135,9 +135,7 @@ a:focus {
 
 .triangle-section {
     position: relative;
-    height: 100px;
-    top: -100px;
-    margin-bottom: -100px;
+
 
     @media all and (min-width: 992px) and (max-width: 1269px) {
         margin-left: 50px;
@@ -147,7 +145,7 @@ a:focus {
 .trinagle-bottom-left,
 .trinagle-bottom-right {
     position: absolute;
-    height: 100%;
+    height: 100px;
     width: 100px;
     bottom: 0;
     overflow: hidden;
@@ -186,8 +184,8 @@ a:focus {
 .square-left,
 .square-right {
     position: absolute;
-    top: 0;
     bottom: 0;
+    height: 102px;
     margin-top: -2px;
     width: 1000%;
     overflow: hidden;
@@ -542,6 +540,24 @@ a:focus {
             font-size: 32px;
         }
     }
+    @media all and (min-width: 400px) and (max-width: 767px) {
+        .main-photo-title h1 {
+            font-size: 26px;
+        }
+        .main-photo-subtitle {
+            font-size: 14px;
+        }
+    }
+    @media all and (max-width: 399px) {
+        height: 400px;
+
+        .main-photo-title h1 {
+            font-size: 22px;
+        }
+        .main-photo-subtitle {
+            font-size: 12px;
+        }
+    }
 }
 
 
@@ -587,6 +603,26 @@ a:focus {
     .feature-text {
         font-size: 14px;
     }
+    @media all and (min-width: 768px) and (max-width: 859px) {
+        .feature-text {
+            font-size: 13px;
+        }
+    }
+    @media all and (max-width: 767px) {
+        .view-content {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .views-row {
+            border-left: none !important;
+            border-right: none !important;
+            border-top: 1px solid #cccccc;
+
+            &:first-child {
+                border-top: none;
+            }
+        }
+    }
 }
 
 
@@ -601,6 +637,13 @@ a:focus {
         text-transform: uppercase;
         margin: 0;
         text-align: center;
+
+        @media all and (min-width: 512px) and (max-width: 767px) {
+            font-size: 32px;
+        }
+        @media all and (max-width: 511px) {
+            font-size: 24px;
+        }
     }
 }
 
@@ -651,6 +694,23 @@ a:focus {
     .block-contact {
         display: inline-block;
         text-align: left;
+    }
+    .logo a {
+        display: inline-block;
+    }
+
+    @media all and (max-width: 767px) {
+        .first-footer,
+        .second-footer {
+            text-align: center;
+        }
+        .block-contact {
+            display: block;
+            text-align: center;
+        }
+        .first-footer {
+            margin-bottom: 30px;
+        }
     }
 }
 .block-contact {
