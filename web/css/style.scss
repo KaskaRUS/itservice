@@ -537,6 +537,10 @@ a:focus {
     @media all and (max-width: 991px) {
         position: relative;
         background-attachment: fixed;
+
+        .main-photo-title h1 {
+            font-size: 32px;
+        }
     }
 }
 
