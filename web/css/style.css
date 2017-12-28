@@ -243,8 +243,7 @@ a:focus {
       display: table-cell;
       vertical-align: middle; }
   .header .logo a {
-    display: inline-block; }
-  .header .logo img {
+    display: inline-block;
     max-width: 250px; }
   .header .main-menu {
     float: left; }
@@ -263,6 +262,9 @@ a:focus {
     .header .header-cont {
       margin-left: 50px;
       margin-right: 50px; } }
+  @media all and (min-width: 992px) and (max-width: 1220px) {
+    .header .block-phone {
+      display: none; } }
   @media all and (max-width: 991px) {
     .header .main-menu {
       display: none; }

@@ -12,8 +12,24 @@ $(document).ready(function() {
             }
         }
     });
+
+
+    $('a[href^="#"]').click(function() {
+        elementClick = $(this).attr("href").split("#");
+        destination = $("a[name=" + elementClick[1] + "]").offset().top;
+        $("html, body").animate({
+            scrollTop: destination
+        }, 800);
+        return false;
+    });
+
+
+
 });
 
 $(window).on("load", function() {
     $(".main-content").addClass("loaded");
+
+    setTimeout(function() {
+    }, 1800);
 });

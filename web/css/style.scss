@@ -106,7 +106,7 @@ a:focus {
         position: absolute;
         width: 100%;
         height: 100%;
-        background: rgb(255, 255, 255, 0.95);
+        background: rgba(255, 255, 255, 0.95);
         -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
         -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
         box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
@@ -245,7 +245,7 @@ a:focus {
     right: 0;
 
     .header-cont {
-        background: rgb(255, 255, 255, 0.95);
+        background: rgba(255, 255, 255, 0.95);
         position: relative;
         height: 100px;
         padding-top: 10px;
@@ -270,9 +270,9 @@ a:focus {
     .logo {
         a {
             display: inline-block;
+            max-width: 250px;
         }
         img {
-            max-width: 250px;
         }
     }
     .main-menu {
@@ -298,6 +298,11 @@ a:focus {
         .header-cont {
             margin-left: 50px;
             margin-right: 50px;
+        }
+    }
+    @media all and (min-width: 992px) and (max-width: 1220px) {
+        .block-phone {
+            display: none;
         }
     }
     @media all and (max-width: 991px) {
