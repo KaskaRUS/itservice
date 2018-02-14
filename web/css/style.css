@@ -245,6 +245,8 @@ a:focus {
   .header .logo a {
     display: inline-block;
     max-width: 250px; }
+    .header .logo a object {
+      pointer-events: none; }
   .header .main-menu {
     float: left; }
   .header .block-phone {

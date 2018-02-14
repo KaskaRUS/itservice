@@ -1,4 +1,4 @@
-@import 'C:/OpenServer/bourbon/_bourbon.scss';
+@import 'vendor/bourbon/bourbon';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=cyrillic,cyrillic-ext');
 
 $font-family: 'Open Sans', sans-serif;
@@ -271,8 +271,9 @@ a:focus {
         a {
             display: inline-block;
             max-width: 250px;
-        }
-        img {
+            object {
+                pointer-events: none;
+            }
         }
     }
     .main-menu {
