@@ -741,3 +741,26 @@ a:focus {
         }
     }
 }
+
+#message_form {
+    label {
+        width: 100%;
+
+        input, textarea {
+            width: 100%;
+        }
+    }
+
+    button {
+        background: #44afd1;
+        border: 0px;
+        color: #222;
+        border-radius: 10px;
+        padding: 5px 10px 5px 10px;
+        width: 100%;   
+
+        &:hover {
+            background: #6abfda;
+        }
+    }
+}

@@ -613,4 +613,18 @@ a:focus {
 .block-contact .mail i {
   margin-right: 10px; }
 
+#message_form label {
+  width: 100%; }
+  #message_form label input, #message_form label textarea {
+    width: 100%; }
+#message_form button {
+  background: #44afd1;
+  border: 0px;
+  color: #222;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  width: 100%; }
+  #message_form button:hover {
+    background: #6abfda; }
+
 /*# sourceMappingURL=style.css.map */

@@ -179,9 +179,37 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 first-footer">
-                                <div class="logo">
-                                    <a href="/"><a href="/"><object data="web/img/logo.svg" type="image/svg+xml"  class="img-responsive"></object></a>
+                                <div class="row block-contact">
+                                    <div class="col-xs-12 col-sm-12 block-title">
+                                        <span>Отправить сообщение</span>
+                                    </div>
                                 </div>
+                                <form action="mailto:test@zhdanov.space?subject=title" method="POST" 
+                                    enctype="text/plain" id="message_form">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <label>Ваше имя:<br><input type="text" name="name"></label>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <label>Ваш email:<br><input type="email" name="email"></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12">
+                                            <label>Тема:<br><input type="text" name="title"></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12">
+                                            <label>Сообщение:<br><textarea name="message"></textarea></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-4 col-sm-offset-8">
+                                            <button>Отправить</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                             <div class="col-xs-12 col-sm-6 second-footer">
                                 <div class="block-contact">
