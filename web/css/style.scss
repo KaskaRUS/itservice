@@ -743,6 +743,8 @@ a:focus {
 }
 
 #message_form {
+    color: #222;
+    
     label {
         width: 100%;
 
@@ -754,7 +756,7 @@ a:focus {
     button {
         background: #44afd1;
         border: 0px;
-        color: #222;
+        // color: #222;
         border-radius: 10px;
         padding: 5px 10px 5px 10px;
         width: 100%;   

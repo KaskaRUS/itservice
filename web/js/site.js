@@ -23,7 +23,11 @@ $(document).ready(function() {
         return false;
     });
 
-
+    $('#message_form').submit(function() {
+        alert("Сообщение отправлено");
+        this.reset();
+        return false;
+    })
 
 });
 
