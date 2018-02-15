@@ -212,6 +212,12 @@ a:focus {
 .dark-section {
   background: #222222;
   color: #cccccc; }
+  .dark-section[id] {
+    margin-top: -50px;
+    border-top: 50px solid transparent;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding;
+    background-clip: padding-box; }
   .dark-section .triangle-section .trinagle-bottom-left::before,
   .dark-section .triangle-section .trinagle-bottom-right::before,
   .dark-section .triangle-section .square-left::before,
@@ -586,8 +592,11 @@ a:focus {
       -khtml-opacity: 0.6;
       opacity: 0.6; }
 
-.floatleft {
-  float: left; }
+.view .views-row:nth-child(3n+2) {
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc; }
+.view .views-row ul {
+  text-align: left; }
 
 /*    map
 -------------------------------*/

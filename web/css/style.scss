@@ -217,10 +217,22 @@ a:focus {
 .main-content {
     background: #efefef;
 }
+
 .section {
     padding: 75px 0;
 }
+
 .dark-section {
+    
+    &[id] {
+        margin-top: -50px;
+        border-top: 50px solid transparent;
+
+        -moz-background-clip: padding;     
+        -webkit-background-clip: padding; 
+        background-clip: padding-box;  
+    }
+
     background: #222222;
     color: #cccccc;
 
@@ -698,9 +710,25 @@ a:focus {
     }
 }
 
-.floatleft {
-    float: left;
+.view {
+    .view-content {
+        // text-align: center;
+    }
+
+    .views-row {
+        // text-align: center;
+
+        &:nth-child(3n+2) {
+            border-left: 1px solid #cccccc;
+            border-right: 1px solid #cccccc;
+        }
+
+        ul {
+            text-align: left;
+        }
+    }
 }
+
 
 /*    map
 -------------------------------*/
