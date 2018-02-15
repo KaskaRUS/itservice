@@ -660,9 +660,12 @@ a:focus {
 .view-clients {
     .view-content {
         text-align: center;
+        padding-left: 80px;
     }
     .views-row {
+        vertical-align: top;
         display: inline-block;
+        float: left;
         padding: 10px;
         margin: 10px;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
@@ -679,9 +682,25 @@ a:focus {
             -khtml-opacity: 1;
             opacity: 1;
         }
+
+        a {
+            font-size: 16pt;
+            font-weight: 800;
+
+            &:not([href]):hover {
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+                filter: alpha(opacity=60);
+                -moz-opacity: 0.6;
+                -khtml-opacity: 0.6;
+                opacity: 0.6;
+            }
+        }
     }
 }
 
+.floatleft {
+    float: left;
+}
 
 /*    map
 -------------------------------*/
