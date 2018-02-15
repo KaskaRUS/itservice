@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=cyrillic,cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -583,7 +584,10 @@ a:focus {
 .footer {
   padding: 75px 0; }
   .footer .second-footer {
-    text-align: right; }
+    text-align: right;
+    position: absolute;
+    bottom: 0px;
+    right: 0px; }
   .footer .block-contact {
     display: inline-block;
     text-align: left; }
@@ -592,7 +596,8 @@ a:focus {
   @media all and (max-width: 767px) {
     .footer .first-footer,
     .footer .second-footer {
-      text-align: center; }
+      text-align: center;
+      position: relative; }
     .footer .block-contact {
       display: block;
       text-align: center; }
@@ -601,7 +606,7 @@ a:focus {
 
 .block-contact .block-title {
   font-weight: 800;
-  text-transform: uppercase;
+  font-family: "Orbitron";
   margin-bottom: 20px; }
 .block-contact .phone {
   font-size: 20px;
@@ -612,6 +617,11 @@ a:focus {
 .block-contact .address i,
 .block-contact .mail i {
   margin-right: 10px; }
+
+.block-form .block-title {
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 20px; }
 
 #message_form label {
   width: 100%; }
@@ -627,5 +637,8 @@ a:focus {
   width: 100%; }
   #message_form button:hover {
     background: #6abfda; }
+
+#contacts .row {
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */

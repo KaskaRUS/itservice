@@ -1,5 +1,6 @@
 @import 'vendor/bourbon/bourbon';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=cyrillic,cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
 
 $font-family: 'Open Sans', sans-serif;
 $textColor: #666666;
@@ -696,6 +697,9 @@ a:focus {
 
     .second-footer {
         text-align: right;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
     }
     .block-contact {
         display: inline-block;
@@ -709,6 +713,7 @@ a:focus {
         .first-footer,
         .second-footer {
             text-align: center;
+            position: relative;
         }
         .block-contact {
             display: block;
@@ -722,7 +727,8 @@ a:focus {
 .block-contact {
     .block-title {
         font-weight: 800;
-        text-transform: uppercase;
+        font-family: "Orbitron";
+        // text-transform: uppercase;
         margin-bottom: 20px;
     }
     .phone {
@@ -739,6 +745,13 @@ a:focus {
         i {
             margin-right: 10px;
         }
+    }
+}
+.block-form {
+    .block-title {
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 20px;
     }
 }
 
@@ -762,5 +775,11 @@ a:focus {
         &:hover {
             background: #6abfda;
         }
+    }
+}
+
+#contacts {
+    .row {
+        position: relative;
     }
 }
