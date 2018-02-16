@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=cyrillic,cyrillic-ext");
 @import url("https://fonts.googleapis.com/css?family=Orbitron");
 body {
@@ -591,12 +592,72 @@ a:focus {
       -moz-opacity: 0.6;
       -khtml-opacity: 0.6;
       opacity: 0.6; }
+@media all and (max-width: 767px) {
+  .view-clients .view-content {
+    text-align: center;
+    padding-left: 0px; }
+  .view-clients .views-row {
+    float: none;
+    display: block; }
+    .view-clients .views-row a {
+      display: inline-block; } }
 
-.view .views-row:nth-child(3n+2) {
-  border-left: 1px solid #cccccc;
-  border-right: 1px solid #cccccc; }
-.view .views-row ul {
-  text-align: left; }
+.view .view-content {
+  display: table-row; }
+.view .views-row {
+  display: table-cell;
+  float: none;
+  position: relative;
+  padding-bottom: 60px; }
+  .view .views-row:nth-child(3n+2) {
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc; }
+  .view .views-row p.price {
+    text-align: right; }
+  .view .views-row ul {
+    text-align: left; }
+    .view .views-row ul li {
+      list-style-type: none;
+      padding-bottom: 10px; }
+      .view .views-row ul li:before {
+        content: '➤';
+        margin-right: 10px; }
+    .view .views-row ul.dignity {
+      font-weight: 800; }
+  .view .views-row img {
+    width: 100%; }
+  .view .views-row .bottom {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    text-align: right; }
+  .view .views-row button {
+    background: #44afd1;
+    border: 0px;
+    border-radius: 10px;
+    color: #222;
+    padding: 5px 10px 5px 10px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s; }
+    .view .views-row button:hover {
+      background: #6abfda; }
+@media all and (min-width: 768px) and (max-width: 859px) {
+  .view .feature-text {
+    font-size: 13px; } }
+@media all and (max-width: 767px) {
+  .view .view-content {
+    max-width: 400px;
+    margin: 0 auto; }
+  .view .views-row {
+    border-left: none !important;
+    border-right: none !important;
+    border-top: 1px solid #cccccc;
+    display: block; }
+    .view .views-row .bottom p {
+      display: inline-block; }
+    .view .views-row:first-child {
+      border-top: none; } }
 
 /*    map
 -------------------------------*/

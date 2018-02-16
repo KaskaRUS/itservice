@@ -674,6 +674,7 @@ a:focus {
         text-align: center;
         padding-left: 80px;
     }
+
     .views-row {
         vertical-align: top;
         display: inline-block;
@@ -708,23 +709,115 @@ a:focus {
             }
         }
     }
+
+    @media all and (max-width: 767px) {
+        .view-content {
+            text-align: center;
+            padding-left: 0px;
+        }
+
+        .views-row {
+            float: none;
+            display: block;
+
+            a {
+                display: inline-block;
+            }
+        }
+    }
 }
 
 .view {
     .view-content {
         // text-align: center;
+        display: table-row;
     }
 
     .views-row {
         // text-align: center;
+        display: table-cell;
+        float: none;
+        position: relative;
+        padding-bottom: 60px;
 
         &:nth-child(3n+2) {
             border-left: 1px solid #cccccc;
             border-right: 1px solid #cccccc;
         }
 
+        p.price {
+            text-align: right;
+        }
+
         ul {
             text-align: left;
+
+            li {
+                list-style-type: none; 
+                padding-bottom: 10px;
+
+                &:before {
+                    content: '➤';
+                    margin-right: 10px;
+                }
+            }
+
+            &.dignity {
+                font-weight: 800;
+            }
+        }
+
+        img {
+            width: 100%;
+
+        }
+
+        .bottom {
+            position: absolute;
+
+            bottom: 0;
+            right: 20px;
+            text-align: right;
+        }
+
+        button {
+            background: #44afd1;
+            border: 0px;
+            border-radius: 10px;
+            color: #222;
+            padding: 5px 10px 5px 10px;
+
+            @include transition(0.3s);
+
+            &:hover {
+                background: #6abfda;
+            }
+        }
+    }
+
+    @media all and (min-width: 768px) and (max-width: 859px) {
+        .feature-text {
+            font-size: 13px;
+        }
+    }
+    @media all and (max-width: 767px) {
+        .view-content {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .views-row {
+            border-left: none !important;
+            border-right: none !important;
+            border-top: 1px solid #cccccc;
+            display: block;
+            
+            .bottom p{
+                display: inline-block;
+            }
+
+            &:first-child {
+                border-top: none;
+            }
         }
     }
 }
