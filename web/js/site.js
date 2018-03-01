@@ -25,14 +25,15 @@ $(document).ready(function() {
 
     $('#message_form').submit(function() {
         
+        data = {
+                "name": $("#form_name").val(),
+                "email": $("#form_email").val(),
+                "title": $("#form_title").val(),
+                "message": $("#form_message").val()
+            };
         
         $.post("sendmessage.php", 
-            {
-                "name": $("#name").val(),
-                "email": $("#email").val(),
-                "title": $("#title").val(),
-                "message": $("#message").val()
-            },
+            data,
             function(data) {
                 if (data.result) {
                     alert("Сообщение отправлено");
