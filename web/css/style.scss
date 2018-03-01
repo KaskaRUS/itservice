@@ -767,9 +767,13 @@ a:focus {
             }
         }
 
+        p.title { 
+            text-align: center;
+            height: 48px;
+        }
+
         img {
             width: 100%;
-
         }
 
         .bottom {

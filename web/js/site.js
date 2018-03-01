@@ -29,6 +29,14 @@ $(document).ready(function() {
         return false;
     })
 
+    $("button[data-message], #cartridges-order").click(function(a,b) {
+        data = messages[$(this).attr("data-message")];
+        $("#form_title").val(data['topic']);
+        $("#form_message").val(data['message']);
+        window.location.hash="contacts";
+        $("#form_name").focus();
+        return false;
+    });    
 });
 
 $(window).on("load", function() {

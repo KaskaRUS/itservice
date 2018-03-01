@@ -624,6 +624,9 @@ a:focus {
         margin-right: 10px; }
     .view .views-row ul.dignity {
       font-weight: 800; }
+  .view .views-row p.title {
+    text-align: center;
+    height: 48px; }
   .view .views-row img {
     width: 100%; }
   .view .views-row .bottom {
