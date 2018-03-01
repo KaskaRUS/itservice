@@ -6,7 +6,7 @@
 	$title = $_POST["title"];
 	$message = $_POST["message"];
 
-	$to = "nikolai@zhdanov.space";//"b2b@org-tech.ru";
+	$to = "b2b@org-tech.ru";
 	$message .= "\n От $name: $email";
 	$headers = "From: $name <$email>";
 

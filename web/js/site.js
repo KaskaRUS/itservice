@@ -31,10 +31,12 @@ $(document).ready(function() {
                 "title": $("#form_title").val(),
                 "message": $("#form_message").val()
             };
-        
-        $.post("sendmessage.php", 
-            data,
-            function(data) {
+
+        $.ajax({
+          type: "POST",
+          url: "sendmessage.php",
+          data: data,
+          success: function(data) {
                 if (data.result) {
                     alert("Сообщение отправлено");
                     this.reset();
@@ -42,9 +44,9 @@ $(document).ready(function() {
                     alert("Сообщение не отправлено. Попробуйте снова");
                 }
             },
-            "json");
-
-        
+          dataType: "json"
+        });
+                
         return false;
     })
 
