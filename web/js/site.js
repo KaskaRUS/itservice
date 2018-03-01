@@ -24,8 +24,25 @@ $(document).ready(function() {
     });
 
     $('#message_form').submit(function() {
-        alert("Сообщение отправлено");
-        this.reset();
+        
+        
+        $.post("sendmessage.php", 
+            {
+                "name": $("#name").val(),
+                "email": $("#email").val(),
+                "title": $("#title").val(),
+                "message": $("#message").val()
+            },
+            function(data) {
+                if (data.result) {
+                    alert("Сообщение отправлено");
+                    this.reset();
+                } else {
+                    alert("Сообщение не отправлено. Попробуйте снова");
+                }
+            });
+
+        
         return false;
     })
 
