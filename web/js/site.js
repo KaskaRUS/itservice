@@ -40,7 +40,7 @@ $(document).ready(function() {
                 alert("Сообщение отправлено");
                 this.reset();
             }
-        ).fail(function() {
+        }).fail(function() {
             alert( "Сообщение не отправлено, попробуйте снова." );
         });
                 
