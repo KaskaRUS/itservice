@@ -1,4 +1,6 @@
 <?php
+	header('Content-Type: application/json');
+
 	$email = $_POST["email"];
 	$name = $_POST["name"];
 	$title = $_POST["title"];
