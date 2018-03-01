@@ -38,7 +38,8 @@ $(document).ready(function() {
           data: data,
           success: function(data) {
                 alert("Сообщение отправлено");
-                this.reset();
+                $("#form_title").val("");
+                $("#form_message").val("");
             }
         }).fail(function() {
             alert( "Сообщение не отправлено, попробуйте снова." );
