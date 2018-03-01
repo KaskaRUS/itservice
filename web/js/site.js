@@ -41,7 +41,8 @@ $(document).ready(function() {
                 } else {
                     alert("Сообщение не отправлено. Попробуйте снова");
                 }
-            });
+            },
+            "json");
 
         
         return false;
