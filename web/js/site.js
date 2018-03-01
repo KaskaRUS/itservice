@@ -37,14 +37,11 @@ $(document).ready(function() {
           url: "sendmessage.php",
           data: data,
           success: function(data) {
-                if (data.result) {
-                    alert("Сообщение отправлено");
-                    this.reset();
-                } else {
-                    alert("Сообщение не отправлено. Попробуйте снова");
-                }
-            },
-          dataType: "json"
+                alert("Сообщение отправлено");
+                this.reset();
+            }
+        ).fail(function() {
+            alert( "Сообщение не отправлено, попробуйте снова." );
         });
                 
         return false;
