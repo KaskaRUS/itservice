@@ -900,6 +900,11 @@ a:focus {
 }
 
 #message_form {
+
+    .error {
+        border: 1px solid red;
+    }
+
     label {
         width: 100%; 
         input, textarea {
