@@ -1,4 +1,5 @@
 <?php
+	mb_internal_encoding("UTF-8");
 	$email = $_POST["email"];
 	$name = $_POST["name"];
 	$title = $_POST["title"];
