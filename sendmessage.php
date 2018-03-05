@@ -10,7 +10,9 @@
 	if ($email == "")
 		$email = "noreply@org-tech.ru";
 	$message .= "\n От $name: $email; tel.: $phone";
-	$headers = "From: $name <$email>";
+	$headers = "From: $name <$email>\r\n";
+	$headers .= "MIME-Version: 1.0\r\n";
+	$headers .= "Content-type: text/html; charset=utf-8";
 
 	mail($to, $title, $message, $headers); 
 
