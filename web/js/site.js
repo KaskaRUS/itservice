@@ -23,8 +23,13 @@ $(document).ready(function() {
     //     return false;
     // });
 
-    $('#form_name, #form_email, #form_title, #form_message').change(function() {
+    $('#form_name, #form_title, #form_message').change(function() {
         $(this).removeClass("error");
+    });
+
+    $('#form_phone, #form_email').change(function() {
+        $("#form_phone").removeClass("error");
+        $("#form_email").removeClass("error");
     });
 
     $('#message_form').submit(function() {
@@ -35,8 +40,9 @@ $(document).ready(function() {
             return false;
         }
 
-        if ($("#form_email").val() == "") {
+        if ($("#form_email").val() == "" && $("#form_phone").val() == "") {
             $("#form_email").addClass("error");
+            $("#form_phone").addClass("error");
             $("#form_email").focus();
             return false;
         }
@@ -56,6 +62,7 @@ $(document).ready(function() {
         data = {
                 "name": $("#form_name").val(),
                 "email": $("#form_email").val(),
+                "phone": $("#form_phone").val(),
                 "title": $("#form_title").val(),
                 "message": $("#form_message").val()
             };

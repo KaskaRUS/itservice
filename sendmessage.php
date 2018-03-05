@@ -3,9 +3,12 @@
 	$name = $_POST["name"];
 	$title = $_POST["title"];
 	$message = $_POST["message"];
+	$phone = $_POST["phone"];
 
 	$to = "b2b@org-tech.ru";
-	$message .= "\n От $name: $email";
+	if ($email == "")
+		$email = "noreply@org-tech.ru";
+	$message .= "\n От $name: $email; tel.: $phone";
 	$headers = "From: $name <$email>";
 
 	mail($to, $title, $message, $headers); 
