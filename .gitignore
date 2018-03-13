@@ -1,3 +1,5 @@
 web/css/.sass-cache/
 web/css/vendor/
 vendor/
+
+composer*
