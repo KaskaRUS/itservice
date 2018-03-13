@@ -67,6 +67,8 @@ $(document).ready(function() {
                 "message": $("#form_message").val()
             };
 
+        yaCounter47880872.reachGoal('order');
+
         $.ajax({
           type: "POST",
           url: "sendmessage.php",
@@ -84,9 +86,22 @@ $(document).ready(function() {
     })
 
     $("button[data-message], #cartridges-order").click(function(a,b) {
-        data = messages[$(this).attr("data-message")];
+        
+        sel = $(this).attr("data-message");
+        data = messages[sel];
+
         $("#form_title").val(data['topic']);
         $("#form_message").val(data['message']);
+
+        if (sel.substring(0, 4) == "cctv")
+            yaCounter47880872.reachGoal('cctv');
+
+        if (sel.substring(0, 9) == "outsource")
+            yaCounter47880872.reachGoal('outsourcing');
+
+        if (sel.substring(0, 10) == "cartridges")
+            yaCounter47880872.reachGoal('cartridge');
+
         window.location.hash="contacts";
         $("#form_name").focus();
         return false;
