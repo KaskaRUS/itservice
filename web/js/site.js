@@ -14,14 +14,17 @@ $(document).ready(function() {
     });
 
 
-    // $('a[href^="#"]').click(function() {
-    //     elementClick = $(this).attr("href").split("#");
-    //     destination = $("#" + elementClick[1]).offset().top;
-    //     $("html, body").animate({
-    //         scrollTop: destination
-    //     }, 800);
-    //     return false;
-    // });
+    $('a[href^="#"]').click(function() {
+        // elementClick = $(this).attr("href").split("#");
+        // destination = $("#" + elementClick[1]).offset().top;
+        // $("html, body").animate({
+        //     scrollTop: destination
+        // }, 800);
+        // return false;
+        $(".menu-btn .tcon").removeClass('active');
+        $(".wrap").removeClass('show-menu');
+        return true;
+    });
 
     $('#form_name, #form_title, #form_message').change(function() {
         $(this).removeClass("error");
