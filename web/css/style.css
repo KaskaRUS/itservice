@@ -262,6 +262,8 @@ a:focus {
     font-weight: 700;
     font-size: 18px;
     padding: 10px; }
+    .header .block-phone a {
+      color: #666666; }
     .header .block-phone p {
       margin: 0; }
   .header .menu-btn {
@@ -699,6 +701,8 @@ a:focus {
 .block-contact .phone {
   font-size: 20px;
   font-weight: 600; }
+  .block-contact .phone a {
+    color: #cccccc; }
   .block-contact .phone i {
     font-size: 17px;
     margin-right: 10px; }
@@ -711,6 +715,8 @@ a:focus {
   text-transform: uppercase;
   margin-bottom: 20px; }
 
+#message_form .error {
+  border: 1px solid red; }
 #message_form label {
   width: 100%; }
   #message_form label input, #message_form label textarea {

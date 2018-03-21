@@ -298,6 +298,10 @@ a:focus {
         font-size: 18px;
         padding: 10px;
 
+        a {
+            color: #666666;
+        }
+
         p {
             margin: 0;
         }
@@ -879,6 +883,10 @@ a:focus {
         font-size: 20px;
         font-weight: 600;
 
+        a {
+            color: #cccccc;
+        }
+
         i {
             font-size: 17px;
             margin-right: 10px;
@@ -900,6 +908,11 @@ a:focus {
 }
 
 #message_form {
+
+    .error {
+        border: 1px solid red;
+    }
+
     label {
         width: 100%; 
         input, textarea {
